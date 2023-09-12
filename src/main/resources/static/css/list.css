@@ -1,0 +1,153 @@
+.edit {
+    color: #FFF;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    text-indent: 20px;
+    padding: 0 10px;
+    border-radius: 3px;
+    line-height: 35px;
+    text-decoration: none !important;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    background: #49d05b url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QIXEi8ud6ocfQAABDBJREFUaN7VmV2IVVUYhp/3KE04WakXU9KoReYPpGlJmVHRj0IXikVdGBVKkjTghRQIeVcIeVWIBWFoTBIEldBkRCZUKBiTTT9ao1LajEOIWgxiKmNvN3vgsFjrnDNn9j4ePzgXe33PXut7z1rf2uvbG5rcbE+xvd12v+1Ltk/b7rJ9H1eK2X7Rla3zShCxxrXZu80sYplHZnNVpcMWYCEwGSjlGOsPkg4mxlwI7Iu4dgFvAQ8B6wLf9kr/yAEXa2si485IsJ8E3NbAf6jcKdvjbHe7MTYQBNdmeyjC7Y0I7giYY2PL/BOBP4FxDUqFP8oCawWOAmMCplfSosi9LwfX/eVCfq0iwnnlMtADLM9ElIAjQGvAnARmR2ZjHzA1aP5s2LklMf3rbY8veIc6FBn3rO1rIuzOCDtkW2R5Edo5220N2Ga/jYx9yfYNthWwbyf+7LuHgXUR510NEPFRIrCZEfaVBLu0HOoKnN81QMTmRGCLIuxzCfaFEOwNgA0Fi1ifCGx5hF2SYF+LdXwigFYXKOKZRGAdEXZ+gt2W6vyvRgix/WgisI0R9uYE+3mlAQoXYvuORGDvRdhJti9E2O5qgxQqxPbUhIgvYodU239H2N+rjVMqOLEnAr2J0++SSPth4Pqg7TQw47IJyUqAI0BL4DomaX6E7wGmBM0XgFuBoYy56XLMyG/ZQbTczgCxB95uYG6kj+mS/gFabZ8C+rJTx+SG5EiiljmfLbWQfT+RQ3PKmE2Bb0fhM5Il8byIa4akMwG7CXg6wj4s6aey6wmBf0KhQrLtdHHENU/S8YBdG6krAFZI2jPSEqKUo4iNwLMR12JJPQH7JPBmrGCS9EG9AYw6RyKl57C9FGHvT7BvVOj/nYDdlbsQ249Ve1VTxs5OMB9WGaOqkDyW1uYq/h7bj9i+Efgl4v9G0lOjDWLsKPNiMnBLDeiXwCAQvkc7KOmBPHJ0tDOyMtLWChyPtF8bXJ8Abs9rsxmtkOeD6z2Szkmalr0pSdkgcJskX3YhttuBaRVeXS4EzkduHQKmA//m+Qwr5bmsJHXanmP74yzQqyP3zZJ0Ms/ZGG2yh0L6bB9IHE+G7R5JR4s4oY7NcVm1Z7+ULZW0v6ijdr1La/kI2K+BBZI+LbKIq1fIpRqYrUC7pAcldRf9rqxeIanPXWeB9cAYSasl9dMgq0uIpPNZHX0gO2J/Dzwhabyk1yX9R4Ot7l1L0mHgTprESsDFPM9fBVlLtUKrBJwK2mY2oZBZwfXJmJAfg7ZVzaTA9nXAgqC5OwYujRQ6rzaRkK8i8U1KwYMReEMTiIh9DNod3XyyG5YBOyP+AWAL8HOND8E87CrgXmBtJMnJHrL9ldRvc/PbylqnsrOJRXSMdF2usH2xiQQM1PJxVhUErQIeB+YDbRT8CSKoIPuA/cAOSV213PQ/fkeMc9mqZNQAAAAASUVORK5CYII=") no-repeat 10px center;
+    background-size: 17px;
+    box-shadow: 0px 0px 1px #213741;
+    position: relative;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+    z-index: 5;
+}
+.edit:hover {
+    background-color: #2d8238;
+}
+.delete {
+    color: #FFF;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    text-indent: 20px;
+    padding: 0 10px;
+    border-radius: 3px;
+    line-height: 35px;
+    text-decoration: none !important;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    box-shadow: 0px 0px 1px #213741;
+    background: #f34642 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNNDI0LjU2MiA3OC4wMjJ2NDAuMDMySDg3LjQzOFY3OC4wMjJoOTQuOTM4YzE1LjQ2NCAwIDI4LTEyLjU0NiAyOC0yOC4wMjJoOTEuMjUgYzAgMTUuNSAxMi41IDI4IDI4IDI4LjAyMkg0MjQuNTYyeiBNNDA2LjMzNCAxNDguMDc5VjQ2MkgxMDUuNjY2VjE0OC4wNzlINDA2LjMzNHogTTE5Ny4zMzMgMjEwLjUgYzAtOC4yOTEtNi43MTYtMTUuMDEyLTE1LTE1LjAxMnMtMTUgNi43MjEtMTUgMTUuMDEydjE5MC4xNTNjMCA4LjMgNi43IDE1IDE1IDE1LjAxMnMxNS02LjcyMSAxNS0xNS4wMTJWMjEwLjQ2MnogTTI3MSAyMTAuNDYyYzAtOC4yOTEtNi43MTYtMTUuMDEyLTE1LTE1LjAxMnMtMTUgNi43MjEtMTUgMTUuMDEydjE5MC4xNTNjMCA4LjMgNi43IDE1IDE1IDE1LjAxMnMxNS02LjcyMSAxNS0xNS4wMTIgVjIxMC40NjJ6IE0zNDQuNjY3IDIxMC40NjJjMC04LjI5MS02LjcxNi0xNS4wMTItMTUtMTUuMDEycy0xNSA2LjcyMS0xNSAxNS4wMTJ2MTkwLjE1M2MwIDguMyA2LjcgMTUgMTUgMTUgczE1LTYuNzIxIDE1LTE1LjAxMlYyMTAuNDYyeiIgc3R5bGU9ImZpbGw6ICNGRkY7Ii8+PC9zdmc+") no-repeat 10px center;
+    background-size: 17px;
+    position: relative;
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    transition: background 0.3s;
+}
+.delete:hover {
+    background-color: #713031;
+}
+
+
+
+
+
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    align-content: center;
+    align-items: center;
+    alignment: center;
+    text-align: center;
+    width: 100%;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+
+
+
+.ex1
+{padding:10px;width:300px;height:100px;margin:0 auto;text-align:center;position:relative} /*задаем размеры, выравнивание и отступы блоков  для всех примеров*/
+
+.ex1 h1:after {content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background:rgb(81, 227, 213);
+    top: 120%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;}
+.ex1 h1:before {content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background:rgb(81, 227, 213);
+    top: 105%;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    margin: 0 auto;
+    left: 0;
+    right: 0;}
+
+
+
+a.button7 {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: #49d05b;
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    width: 10000px;
+}
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+.green { color: #fff;background: #49d05b; border: none; /* Убираем рамку */
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    margin-bottom: 1rem; /* Отступ снизу */}
+.red { background: #C1172C; }
+.orange { background: #F7941E; }

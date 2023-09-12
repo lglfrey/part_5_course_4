@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" href="../static/css/list.css" rel="stylesheet" th:href="@{/css/list.css}"/>
+    <div th:insert="blocks/header" ></div>
+</head>
+<body>
+<div class=ex1><h1>Редактирование сотрудника</h1></div>
+<form method="post" th:object="${employee}">
+    <table border="1" class="styled-table">
+        <tr>
+            <th>Имя</th>
+            <th>Департамент</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="name" placeholder="Введите имя" th:field="*{name}" id="pages" th:value="${name}" >
+                <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"/>
+            </td>
+            <td>
+                <select  name="nameDep">
+                    <div th:each="element : ${department}">
+                        <option th:text="${element.nameDep}"></option>
+                    </div>
+                </select>
+            </td>
+        </tr>
+
+    </table>
+    <div align="center"><button type="submit" class="green">Изменить сотрудника</button></div>
+</form>
+</body>
+</html>

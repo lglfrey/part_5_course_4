@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="eu">
+<head>
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link type="text/css" href="../static/css/list.css" rel="stylesheet" th:href="@{/css/list.css}"/>
+  <div th:insert="blocks/header"></div>
+</head>
+<body>
+<h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+<div class=ex1><h1>Сотрудники</h1></div>
+<table  border="1" class="styled-table">
+  <tr>
+    <th>Имя</th>
+    <th>Департамент</th>
+  </tr> <!--ряд с ячейками заголовков-->
+  <tr th:each="el : ${employees}">
+    <td th:text="${el.name}"></td>
+    <td>
+      <from th:each="pasp : ${el.getDepartment()}">
+        <p th:text="${pasp.getNameDep()}"/>
+      </from>
+    </td>
+
+    <td><a th:href="'/employee/' + ${el.id} + '/edit'" class="edit">Редактировать</a></td>
+    <td><a th:href="'/employee/' + ${el.id} + '/remove'" class="delete">Удалить</a></td>
+  </tr>
+</table>
+<p></p>
+<center><a href="/employee/add" class="button7">Создать</a></center>
+<br>
+</body>
+<footer>
+  <div th:insert="blocks/footer" ></div>
+</footer>
+</html>
